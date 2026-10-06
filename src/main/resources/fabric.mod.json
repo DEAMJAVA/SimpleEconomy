@@ -1,0 +1,35 @@
+{
+	"schemaVersion": 1,
+	"id": "simple-economy",
+	"version": "${version}",
+	"name": "SimpleEconomy",
+	"description": "Simple Economy Mod and Economy Provider",
+	"authors": [
+		"DEAMJAVA"
+	],
+	"contact": {
+		"homepage": "https://github.com/DEAMJAVA/SimpleEconomy",
+		"sources": "https://github.com/DEAMJAVA/SimpleEconomy"
+	},
+	"license": "GPLv3",
+	"icon": "assets/simple-economy/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			{
+				"value": "net.deamjava.simple_economy.SimpleEconomy",
+				"adapter": "kotlin"
+			}
+		]
+	},
+	"mixins": [
+		"simple-economy.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.19.5",
+		"minecraft": "~26.2",
+		"java": ">=25",
+		"fabric-api": "*",
+		"fabric-language-kotlin": "*"
+	}
+}
